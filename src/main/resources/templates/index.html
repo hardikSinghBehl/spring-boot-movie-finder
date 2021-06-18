@@ -6,25 +6,19 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Movie Finder</title>
-<!-- Font Awesome -->
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-<!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Material Design Bootstrap -->
 <link rel="stylesheet" href="css/mdb.min.css">
-<!-- Your custom styles (optional) -->
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 	<header class="body-background">
-		<!--Navbar-->
 		<nav
 			class="navbar-bottom navbar navbar-expand-lg navbar-dark fixed-top">
 			<div class="container">
-				<!-- Navbar brand -->
 
 				<a class="navbar-brand" href="#">
 					<h3 class='my-auto'>
@@ -52,14 +46,11 @@
 			</div>
 		</form>
 	</div>
-	<!-- Navbar -->
 
-	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-	<!-- Your custom scripts (optional) -->
 	<script type="text/javascript">
 		$(".search-btn").click(function() {
 			$(".wrapper").addClass("active");
@@ -84,11 +75,5 @@
 			$(".search-data span").fadeOut(500);
 		});
 	</script>
-	<p class="d-none" th:if="${param.error}">
-		<script type="text/javascript">
-			toastr.error('Enter A Valid Title.',
-					'No Movie With This Title Exists!')
-		</script>
-	</p>
 </body>
 </html>
