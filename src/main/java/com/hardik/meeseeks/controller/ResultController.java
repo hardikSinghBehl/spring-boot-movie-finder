@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.hardik.meeseeks.constant.Path;
 import com.hardik.meeseeks.constant.Template;
 import com.hardik.meeseeks.service.MovieService;
 
@@ -17,7 +18,7 @@ public class ResultController {
 
 	private final MovieService movieService;
 
-	@PostMapping("/result")
+	@PostMapping(value = Path.RESULT)
 	public String result(@RequestParam("title") final String movieTitle, final Model model) {
 		final var response = movieService.find(movieTitle);
 
