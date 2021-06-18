@@ -25,7 +25,6 @@ public class ResultController {
 			return Template.NOT_FOUND;
 
 		model.addAttribute("movie", movieService.find(movieTitle).getBody());
-		model.addAttribute("status", "success");
 		return Template.RESULT;
 	}
 
